@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="movies.js"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Winc Film Finder</h1>
+    </header>
+    <nav class="nav-buttons">
+        <span><input type="radio" id="latest-movies" name="movie-filter" value="latest-movies">
+            <label for="latest-movies">Latest movies, 2014 or newer</label></span>
+        <span><input type="radio" id="avenger-movies" name="movie-filter" value="avenger-movies">
+            <label for="avenger-movies">Avenger movies</label></span>
+        <span><input type="radio" id="x-men-movies" name="movie-filter" value="x-men-movies">
+            <label for="x-men-movies">X-Men movies</label></span>
+        <span><input type="radio" id="princess-movies" name="movie-filter" value="princess-movies">
+            <label for="princess-movies">Princess movies</label></span>
+        <span><input type="radio" id="batman-movies" name="movie-filter" value="batman-movies">
+            <label for="batman-movies">Batman movies</label></span>
+        <span><input type="radio" id="all-movies" name="movie-filter" value="all-movies" checked="checked">
+            <label for="all-movies">All movies</label></span>
+    </nav>
+    <section class="search-field-container">
+        <label for="search-field-input">Enter your search tag (case
+            sensitive) and press the search button or hit enter</label>
+        <input type="text" class="search-field" id="search-field-input" name="search" value="your search tag here">
+        <button type="button" class="search-button" id="search-button" onclick="">
+            Search
+        </button>
+    </section>
+
+    <main class="movie-grid">
+        <ul id="movie-list">
+
+        </ul>
+    </main>
+</body>
+
+</html>

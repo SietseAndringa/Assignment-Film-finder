@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    text-align: center;
+}
+
+.nav-buttons {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+    } 
+
+.movie-grid ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-rows: 0fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-content: center;
+}
+
+.search-field-container {
+    text-align: center;
+    font-size: 18px;
+}
+
+.search-field-container input {
+    width: 25%;
+    height: 25px;
+}
+
+.search-field {
+    display: block;
+    margin: 15px auto;
+    
+}
+
+.search-button {
+    width: 150px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
